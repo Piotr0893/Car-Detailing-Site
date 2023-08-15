@@ -18,6 +18,8 @@
 		<script
 			src="https://kit.fontawesome.com/1b3225add6.js"
 			crossorigin="anonymous"></script>
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
 			rel="stylesheet"
@@ -86,7 +88,10 @@
 			<section class="aboutus-middle py-5 py-lg-0">
 				<div class="container px-3">
 					<div class="row m-0 justify-content-center aboutus-middle-items">
-						<div class="aboutus-middle-text col-lg-4 px-lg-5 text-lg-end">
+						<div
+							class="aboutus-middle-text col-lg-4 px-lg-5 text-lg-end"
+							data-aos="fade-right"
+							data-aos-delay="300">
 							<h3>our passion</h3>
 							<p>
 								Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -101,7 +106,9 @@
 							class="aboutus-middle-img col-lg-4 px-lg-3" />
 
 						<div
-							class="aboutus-middle-text col-lg-4 px-lg-5 text-end text-lg-start">
+							class="aboutus-middle-text col-lg-4 px-lg-5 text-end text-lg-start"
+							data-aos="fade-left"
+							data-aos-delay="300">
 							<h3>our goals</h3>
 							<p>
 								Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -246,5 +253,13 @@
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
 			crossorigin="anonymous"></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init({
+				startEvent: 'DOMContentLoaded',
+				offset: 200,
+				once: true,
+			});
+		</script>
 	</body>
 </html>

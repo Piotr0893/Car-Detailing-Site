@@ -23,7 +23,7 @@
 			rel="stylesheet"
 			integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
 			crossorigin="anonymous" />
-
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 		<link rel="stylesheet" href="./css/style.css" />
 	</head>
 	<body>
@@ -180,7 +180,11 @@
 				<p class="display-2 text-center pt-5">Frost Customs</p>
 				<div class="container py-5">
 					<div class="row m-0 align-items-center">
-						<div class="home-story-text col-md-6">
+						<div
+							class="home-story-text col-md-6 border p-4"
+							data-aos="flip-left"
+							data-aos-delay="300"
+							data-aos-duration="1000">
 							<h3>Historia naszej firmy</h3>
 							<p>
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
@@ -190,7 +194,11 @@
 							</p>
 						</div>
 
-						<div class="home-story-img col-md-6">
+						<div
+							class="home-story-img col-md-6"
+							data-aos="flip-right"
+							data-aos-delay="300"
+							data-aos-duration="1000">
 							<img
 								src="./img/car-g095707627_640.png"
 								alt="lamborgini-hurrcan-green"
@@ -210,5 +218,13 @@
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
 			crossorigin="anonymous"></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init({
+				startEvent: 'DOMContentLoaded',
+				offset: 200,
+				once: true,
+			});
+		</script>
 	</body>
 </html>
